@@ -1,0 +1,4739 @@
+/* Reset<link rel.wanky-picture {
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="our-story.css"> and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+.wanky-picture:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}lesheet" href="our-story.css"> and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+.wanky-picture {
+    cursor: pointer;
+}
+
+.wanky-picture:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.wanky-picture-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+main {
+    padding-top: 80px; /* Adjust this value based on your header height */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .connect-wallet {
+        margin-top: 1rem;
+    }
+
+    .character-container {
+        max-width: 80%;
+        margin: 1rem auto;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .connect-wallet {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.character-container {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+#character-image {
+    width: 100%;
+    height: auto;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    transform: translateX(-50%);
+}
+
+/* Show speech bubble on hover */
+.character-container:hover .speech-bubble {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .character-container {
+        max-width: 200px; /* Smaller on mobile */
+    }
+    
+    .speech-bubble {
+        font-size: 12px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+      min-width: 100%;
+    }
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+/* Reset<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="our-story.css"> and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+main {
+    padding-top: 80px; /* Adjust this value based on your header height */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .connect-wallet {
+        margin-top: 1rem;
+    }
+
+    .character-container {
+        max-width: 80%;
+        margin: 1rem auto;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .connect-wallet {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.character-container {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+#character-image {
+    width: 100%;
+    height: auto;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    transform: translateX(-50%);
+}
+
+/* Show speech bubble on hover */
+.character-container:hover .speech-bubble {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .character-container {
+        max-width: 200px; /* Smaller on mobile */
+    }
+    
+    .speech-bubble {
+        font-size: 12px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+      min-width: 100%;
+    }
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .connect-wallet {
+        margin-top: 1rem;
+    }
+
+    .character-container {
+        max-width: 80%;
+        margin: 1rem auto;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .connect-wallet {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.character-container {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+#character-image {
+    width: 100%;
+    height: auto;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    transform: translateX(-50%);
+}
+
+/* Show speech bubble on hover */
+.character-container:hover .speech-bubble {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .character-container {
+        max-width: 200px; /* Smaller on mobile */
+    }
+    
+    .speech-bubble {
+        font-size: 12px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+      min-width: 100%;
+    }
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .connect-wallet {
+        margin-top: 1rem;
+    }
+
+    .character-container {
+        max-width: 80%;
+        margin: 1rem auto;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .connect-wallet {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.character-container {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+#character-image {
+    width: 100%;
+    height: auto;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    transform: translateX(-50%);
+}
+
+/* Show speech bubble on hover */
+.character-container:hover .speech-bubble {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .character-container {
+        max-width: 200px; /* Smaller on mobile */
+    }
+    
+    .speech-bubble {
+        font-size: 12px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+      min-width: 100%;
+    }
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .connect-wallet {
+        margin-top: 1rem;
+    }
+
+    .character-container {
+        max-width: 80%;
+        margin: 1rem auto;
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .connect-wallet {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.character-container {
+    position: relative;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+#character-image {
+    width: 100%;
+    height: auto;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    font-size: 14px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    transform: translateX(-50%);
+}
+
+/* Show speech bubble on hover */
+.character-container:hover .speech-bubble {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .character-container {
+        max-width: 200px; /* Smaller on mobile */
+    }
+    
+    .speech-bubble {
+        font-size: 12px;
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+      min-width: 100%;
+    }
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #FF3131;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e62e2e;
+}
+.wallet-status {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.video-item:hover .play-button {
+    opacity: 1;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 55px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    margin-top: 80px; /* Adjust based on your header height */
+    text-align: center;
+}
+
+.main-illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #FF3131;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e62e2e;
+}
+.wallet-status {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.video-item:hover .play-button {
+    opacity: 1;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 55px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-item video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on small screens */
+    }
+    /* Add a hamburger menu for mobile later */
+}
+/* ... existing styles ... */
+
+.hero-image {
+    width: 95%; /* Reduced from 100% to 80% */
+    max-width: 1100px; /* Reduced from 1200px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-illustration {
+    width: 120%;
+    height: auto;
+    max-height: 75vh; /* Reduced from 80vh to 60vh */
+    object-fit: contain;
+}
+
+/* ... rest of your styles ... *//* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... *//* General styles */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* ... rest of your styles ... */body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... other styles ... */
+}.character-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#character-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#character-image:hover {
+    transform: scale(1.1);
+}
+#character-image {
+    width: 150px; /* Increased from 100px to 150px */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 30px; /* Increased from 20px to 30px */
+    bottom: 30px; /* Increased from 20px to 30px */
+    z-index: 1000;
+}
+#character-image {
+    width: 200px; /* Even larger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.character-container {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+/* ... existing styles ... */
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: auto; /* This pushes the menu to the left */
+}
+
+.connect-wallet {
+    background-color: #333; /* Adjust color as needed */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* ... rest of your styles ... */.menu a {
+    font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.menu li {
+    margin-left: 1rem; /* Less space between items */
+}
+
+header {
+    padding: 1.2rem 0; /* Slightly taller header */
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.connect-wallet {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background-color: #555;
+}
+/* Add these styles to your existing CSS */
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.our-story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.menu a.active {
+    background-color: #333;
+    color: #fff;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.our-story-page {
+    background-color: #FF3131; /* Adjust this color to match the exact red from the WOOKZCLUB text */
+    color: #fff;
+}
+
+.our-story-content {
+    max-width: 800px;
+    margin: 100px auto 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.our-story-content h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-story-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.our-story-page .menu a {
+    color: #fff;
+}
+
+.our-story-page .menu a:hover,
+.our-story-page .menu a.active {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet {
+    background-color: #fff;
+    color: #FF3131;
+}
+
+.our-story-page .connect-wallet:hover {
+    background-color: #f0f0f0;
+}
+/* Shop page styles */
+.shop-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.shop-content {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 50%;
+    padding: 40px;
+}
+
+.product-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #FF3131;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e62e2e;
+}
+.wallet-status {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.video-item:hover .play-button {
+    opacity: 1;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 55px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+.video-item video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* Gallery page styles */
+.gallery-page {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.gallery-content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 40px;
+}
+
+.gallery-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.video-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-item video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.video-item h3 {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 555px) {
+    .video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
